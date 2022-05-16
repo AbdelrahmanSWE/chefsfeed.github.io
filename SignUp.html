@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="Script.js"></script>
+    <link href="Stylesheet.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef's Feed | Sign-up</title>
+</head>
+<body id="body-wp">
+    <header>
+        <img src="Data/g26968.png" alt="chefs logo">
+
+        <div class="search">
+            <input type="textbox" class="text">
+            <img src="Data/srch.png" class="Search" title="Search">
+        </div>
+    </header>
+
+
+    
+    <section class="content">
+        <div id="web-title"><p>Sign up</p></div>
+        <form class="cred-form" onsubmit="Validate()">
+            <label>First Name</label><br>
+            <input type="textbox" class="Personal-Info" placeholder="Abdualrahman" required title="Your name">
+            <br>
+            <label>Last Name</label><br>
+            <input type="textbox" class="Personal-Info" placeholder="Alsherif" required title="your Last name">
+            <br>
+            <p>Gender:</p>
+            <div>
+            <label>Male</label>
+            <input type="radio" name="Gender"  class="Personal-Info" required title="male" ></div>
+            <div><label>Female</label>
+            <input type="radio" name="Gender" class="Personal-Info" required title="female"></div>
+            <br>
+            <br>
+            <label>Email</label><br>
+            <input type="email" class="Personal-Info" placeholder="eg.myChefFeed@email.com" required title="Email address">
+            <br> 
+            <label>Phone Number</label><br>
+            <input type="textbox" class="Personal-Info" placeholder="eg.+201234567" title="Your phone number" > 
+            <br>
+            <label>Username</label><br>
+            <input type="textbox" class="Personal-Info" placeholder="eg.SuperChef420" required title="Enter a username">
+            <br>
+            <label for="txtPassword">Password</label><br>
+            <input type="password" id="txtPassword" class="Personal-Info" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="eg.Chef-123" required title="Enter a password">
+            <ol class="password-conditions">
+                <li>Atleast 8 characters</li>
+                <li>First letter should be Upper case</li>
+                <li>Numbers, lower case letters and symbols !</li>
+            </ol><br><br>
+            <label for="textConfirmPassword">Confirm Password</label><br>
+            <input type="password" id="txtConfirmPassword" class="Personal-Info"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  placeholder="eg.Chef-123" required title="Confirm Password"> 
+            <br>
+            <select name="cuisine" id="cuisine">
+                <option value="italian">Italian cuisine</option>
+                <option value="egyptian">Egyptian cuisine</option>
+                <option value="french">French cuisine</option>
+                <option value="indian">Indian cuisine</option>
+            </select>
+            <div>
+            <input type="checkbox" class="Personal-Info" required title="Make sure you carfully read these" >
+            <label>I have read and I agree to these <a href="Terms.html">Terms and Conditions</a></label><br></div>
+            <div>
+            <input type="checkbox" class="Personal-Info" title="Recieve all news about us">
+            <label>I Would like to recive news and updates on my email</label> <br></div>
+            <label for="cuisine">Choose your favorite cuisine:</label>
+            <input type="submit" onclick="test_str()" value="Sign Up" class="submit" title="sign up">
+
+        </form>
+    </section>
+    
+    
+    
+
+
+
+
+
+    
+    <footer>
+        <ul>  
+            <li><b>Development team</b></li>
+            <li>Abdelrahman hesham</li>
+            <li>Abdelrahman al sayed</li>
+            <li>abdelrahman ashraf</li>
+            <li>Ahmed Magdy</li>
+        </ul>
+        <ul>
+            <li><B>Technical support:</B></li>
+            <li><a>abdelrahman@support.notreal</a></li>
+        </ul>
+        <p>All rights reserved for the team members.</p>
+    </footer>
+</body>
+</html>
